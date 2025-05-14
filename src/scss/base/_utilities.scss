@@ -1,0 +1,71 @@
+@use '../abstracts' as *;
+
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+
+.d-flex {
+	display: flex;
+}
+.d-block {
+	display: block;
+}
+
+.hidden {
+	display: none;
+}
+.hidden-menu {
+	top: -100% !important;
+	@include transition;
+}
+.visible {
+	visibility: visible;
+}
+
+.text-uppercase {
+	text-transform: uppercase;
+}
+.text-lowercase {
+	text-transform: lowercase;
+}
+.row {
+	width: 100%;
+	@include flex(row, center, center);
+	gap: 16px;
+	@media (max-width: 991px) {
+		flex-direction: column;
+	}
+}
+.desktop {
+	display: flex !important;
+	@media (max-width: 768px) {
+		display: none !important;
+	}
+}
+.mobile {
+	display: none !important;
+	@media (max-width: 768px) {
+		display: flex !important;
+	}
+}
+
+.primary {
+	@include center;
+	height: 56px;
+	padding: 16px 32px;
+	border-radius: 8px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	background: linear-gradient(90deg, #0a8879 0%, #09aa4c 100%);
+	box-shadow: 0px 8px 24px 0px rgba(10, 136, 121, 0.45);
+	color: $white;
+	font-family: $font;
+	font-size: 16px;
+	font-weight: 600;
+	@include transition;
+	&:hover {
+		background: $primaryGreenDark;
+	}
+}

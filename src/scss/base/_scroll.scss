@@ -1,0 +1,24 @@
+// @use '../abstracts' as *;
+
+// /* Стиль смуги прокрутки */
+// ::-webkit-scrollbar {
+// 	width: 12px;
+// 	height: 12px;
+// }
+
+// /* Фонова доріжка скролбару */
+// ::-webkit-scrollbar-track {
+// 	background: $text-light;
+// 	border-radius: 2px;
+// }
+
+// /* Сам "повзунок" (власне скролбар) */
+// ::-webkit-scrollbar-thumb {
+// 	background: #0a2e27;
+// 	border-radius: 2px;
+// }
+
+// /* При наведенні — темніший відтінок */
+// // ::-webkit-scrollbar-thumb:hover {
+// // 	background: #555;
+// // }

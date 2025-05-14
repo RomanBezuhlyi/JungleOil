@@ -1,0 +1,18 @@
+@use './base/fonts' as *;
+@use './base/reset' as *;
+@use './base/base' as *;
+@use './base/utilities' as *;
+@use './base/container' as *;
+@use './base/scroll' as *;
+
+@use './components/modal' as *;
+
+@use './blocks/header' as *;
+@use './blocks/hero' as *;
+@use './blocks/advantages' as *;
+@use './blocks/audience' as *;
+@use './blocks/action' as *;
+@use './blocks/recom' as *;
+@use './blocks/choose' as *;
+@use './blocks/reviews' as *;
+@use './blocks/footer' as *;

@@ -1,0 +1,113 @@
+<div class="modal-wrap hidden" data-aos="fade" data-aos-offset="200">
+	<div class="modal">
+		<img src="./img/icons/close-modal.svg" alt="" class="modal__close" />
+		<h2>Choose Your Product</h2>
+		<div class="swiperModal">
+			<button class="modal-button-prev">
+				<img src="./img/icons/chev-l.svg" alt="" />
+			</button>
+			<ul class="swiper-wrapper modal__list">
+				<li class="swiper-slide modal__item">
+					<img class="modal__item-img" src="./img/product-form.png" alt="" />
+					<p class="modal__item-name">Product Name One</p>
+					<p class="modal__item-price">$ 200</p>
+					<label class="custom-checkbox">
+						<input type="checkbox" name="product" value="Product Name One" />
+						<span class="checkmark"></span>
+					</label>
+				</li>
+				<li class="swiper-slide modal__item">
+					<img class="modal__item-img" src="./img/product-form.png" alt="" />
+					<p class="modal__item-name">Product Name Two</p>
+					<p class="modal__item-price">$ 160</p>
+					<label class="custom-checkbox">
+						<input type="checkbox" name="product" value="Product Name Two" />
+						<span class="checkmark"></span>
+					</label>
+				</li>
+				<li class="swiper-slide modal__item">
+					<img class="modal__item-img" src="./img/product-form.png" alt="" />
+					<p class="modal__item-name">Product Name Three</p>
+					<p class="modal__item-price">$ 320</p>
+					<label class="custom-checkbox">
+						<input type="checkbox" name="product" value="Product Name Three" />
+						<span class="checkmark"></span>
+					</label>
+				</li>
+			</ul>
+			<button class="modal-button-next">
+				<img src="./img/icons/chev-r.svg" alt="" />
+			</button>
+		</div>
+		<button class="primary" id="place-order" disabled>Place an Order</button>
+	</div>
+	<div class="delivery hidden">
+		<img src="./img/icons/close-modal.svg" alt="" class="delivery__close" />
+		<h2>Choose Your Product</h2>
+		<div class="delivery__form-wrap">
+			<form class="delivery__form" action="">
+				<div class="row">
+					<div class="delivery__input">
+						<label for="">First Name <span>*</span></label>
+						<input type="text" placeholder="Your First Name" required />
+					</div>
+					<div class="delivery__input">
+						<label for="">Last Name <span>*</span></label>
+						<input type="text" placeholder="Your Last Name" required />
+					</div>
+				</div>
+				<div class="delivery__input">
+					<label for="">Address Line 1 <span>*</span></label>
+					<input type="text" placeholder="Your Address Line 1" required />
+				</div>
+				<div class="delivery__input">
+					<label for="">Address Line 2 <span>*</span></label>
+					<input type="text" placeholder="Your Address Line 2" required />
+				</div>
+				<div class="row">
+					<div class="custom-select-wrap">
+						<label for="state">State <span>*</span></label>
+						<div class="custom-select" id="state-select">
+							<div class="custom-select__selected">NY</div>
+							<div class="custom-select__arrow">
+								<img src="./img/icons/chev.svg" alt="" />
+							</div>
+							<ul class="custom-select__options hidden">
+								<li data-value="NY">NY</li>
+								<li data-value="AL">AL</li>
+								<li data-value="AK">AK</li>
+								<li data-value="AZ">AZ</li>
+								<li data-value="AR">AR</li>
+								<li data-value="NY">NY</li>
+								<li data-value="AL">AL</li>
+								<li data-value="AK">AK</li>
+								<li data-value="AZ">AZ</li>
+								<li data-value="AR">AR</li>
+							</ul>
+						</div>
+						<input type="hidden" name="state" value="NY" required />
+					</div>
+					<div class="delivery__input">
+						<label for="">City <span>*</span></label>
+						<input type="text" placeholder="Your City" required />
+					</div>
+				</div>
+				<div class="row">
+					<div class="delivery__input">
+						<label for="">Zip Code <span>*</span></label>
+						<input type="text" placeholder="Your Zip Code" required />
+					</div>
+					<div class="delivery__input">
+						<label for="">Phone <span>*</span></label>
+						<input type="tel" placeholder="Your Phone Number" required />
+					</div>
+				</div>
+				<div class="delivery__input">
+					<label for="">Email <span>*</span></label>
+					<input type="email" placeholder="Your Email Address" required />
+				</div>
+				<button class="primary" type="submit" disabled>Rush my Order</button>
+			</form>
+		</div>
+	</div>
+</div>

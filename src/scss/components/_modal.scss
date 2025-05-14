@@ -1,0 +1,294 @@
+@use '../abstracts' as *;
+
+.modal-wrap {
+	z-index: 12;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(82, 99, 77, 0.55);
+}
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 848px;
+	transform: translate(-50%, -50%);
+	border-radius: 16px;
+	background: $white;
+	padding: 40px;
+	@media (max-width: 991px) {
+		width: 343px;
+		padding: 24px;
+	}
+	&__close {
+		position: absolute;
+		top: 40px;
+		right: 40px;
+		cursor: pointer;
+		@media (max-width: 991px) {
+			top: 24px;
+			right: 24px;
+			width: 24px;
+			height: 24px;
+		}
+	}
+	h2 {
+		text-align: center;
+		font-size: 32px;
+		font-weight: 500;
+		margin-bottom: 32px;
+		@media (max-width: 991px) {
+			text-align: left;
+			font-size: 24px;
+			font-weight: 400;
+		}
+	}
+	&__list {
+		margin-bottom: 32px;
+		@media (max-width: 991px) {
+			margin-bottom: 24px;
+		}
+	}
+
+	&__item {
+		@include flex(column, center, center);
+		gap: 16px;
+		@media (max-width: 991px) {
+			gap: 8px;
+		}
+		&-name {
+			color: $natural_900;
+			text-align: center;
+			font-size: 16px;
+			font-weight: 600;
+		}
+		&-price {
+			color: $natural_800;
+			text-align: center;
+			font-size: 32px;
+		}
+	}
+	.primary {
+		margin: auto;
+	}
+}
+.delivery {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 576px;
+	transform: translate(-50%, -50%);
+	border-radius: 16px;
+	background: $white;
+	padding: 40px;
+	overflow: hidden;
+	@media (max-width: 991px) {
+		width: 343px;
+		padding: 24px;
+		height: 90%;
+		padding-bottom: 100px;
+	}
+	&__close {
+		position: absolute;
+		top: 40px;
+		right: 40px;
+		cursor: pointer;
+		@media (max-width: 991px) {
+			top: 24px;
+			right: 24px;
+			width: 24px;
+			height: 24px;
+		}
+	}
+	h2 {
+		text-align: center;
+		font-size: 32px;
+		font-weight: 500;
+		margin-bottom: 32px;
+		@media (max-width: 991px) {
+			text-align: left;
+			font-size: 24px;
+			font-weight: 400;
+		}
+	}
+	&__form-wrap {
+		@media (max-width: 991px) {
+			height: 100%;
+			overflow: scroll;
+			padding-right: 10px;
+		}
+	}
+	&__form {
+		@include flex(column, center, center);
+		gap: 16px;
+	}
+	&__input {
+		width: 100%;
+		label {
+			display: block;
+			font-size: 14px;
+			margin-bottom: 4px;
+			span {
+				color: #0fb597;
+			}
+		}
+		input {
+			width: 100%;
+			height: 48px;
+			padding: 8px 12px 8px 16px;
+			border-radius: 8px;
+			border: 1px solid #b8cccb;
+			background: $white;
+		}
+		input::placeholder {
+			color: #b8cccb;
+			font-size: 16px;
+		}
+		input:focus {
+			border: 1px solid $black;
+		}
+		input.filled {
+			border: 1px solid $black;
+		}
+	}
+	.primary {
+		margin-top: 24px;
+	}
+}
+.custom-checkbox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+
+	input {
+		display: none;
+	}
+
+	.checkmark {
+		width: 32px;
+		height: 32px;
+		border-radius: 4px;
+		border: 1px solid $black;
+		background: $white;
+		position: relative;
+		@include transition;
+
+		&::after {
+			content: '';
+			position: absolute;
+			display: none;
+			left: 10px;
+			top: 3px;
+			width: 8px;
+			height: 14px;
+			border: solid #0fb597;
+			border-width: 0 3px 3px 0;
+			transform: rotate(45deg);
+		}
+	}
+
+	input:checked + .checkmark::after {
+		display: block;
+	}
+}
+.modal__item {
+	transition: 0.3s ease;
+
+	&.selected {
+		.modal__item-name,
+		.modal__item-price {
+			color: $black;
+		}
+	}
+}
+
+.custom-select-wrap {
+	width: 100%;
+	position: relative;
+}
+
+.custom-select-wrap label {
+	display: block;
+	font-size: 14px;
+	margin-bottom: 4px;
+	span {
+		color: #0fb597;
+	}
+}
+
+.custom-select {
+	position: relative;
+	width: 100%;
+	height: 48px;
+	padding: 8px 12px 8px 16px;
+	border-radius: 8px;
+	border: 1px solid $black;
+	background: $white;
+	cursor: pointer;
+	@include flex(row, space-between, center);
+}
+
+.custom-select__arrow {
+	margin-left: 8px;
+	font-size: 14px;
+}
+
+.custom-select__options {
+	padding: 8px;
+	margin-top: 4px;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	border: 1px solid #b8cccb;
+	border-radius: 8px;
+	background: $white;
+	box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.15);
+	z-index: 100;
+	max-height: 200px;
+	overflow-y: auto;
+}
+
+.custom-select__options.hidden {
+	display: none;
+}
+
+.custom-select__options li {
+	padding: 8px 16px;
+	border-radius: 8px;
+	cursor: pointer;
+	@include transition;
+}
+
+.custom-select__options li:hover,
+.custom-select__options li.selected {
+	background-color: #d8e8da;
+}
+
+.swiperModal {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.modal-button-prev::after {
+	display: none;
+}
+.modal-button-next::after {
+	display: none;
+}
+.modal-button-prev {
+	position: absolute;
+	left: 0;
+	top: 45%;
+	z-index: 11;
+}
+.modal-button-next {
+	position: absolute;
+	right: 0;
+	top: 45%;
+	z-index: 11;
+}

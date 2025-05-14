@@ -1,0 +1,27 @@
+@use '../abstracts' as *;
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	scroll-behavior: smooth;
+	height: 100vh;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	font-family: $font;
+	background: $white;
+	color: $natural_800;
+	line-height: normal;
+}
+
+body.modal-open {
+	overflow: hidden !important;
+	height: 100vh;
+}
+
+button {
+	cursor: pointer;
+}
