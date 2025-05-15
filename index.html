@@ -8,6 +8,10 @@
 		<title>JungleOil</title>
 		<link
 			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<link
+			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
 		/>
 		<link
@@ -20,39 +24,602 @@
 	<body>
 		<header class="header-wrap">
 	<div class="container">
-		<div class="header"></div>
+		<div class="header">
+			<a class="header__logo" href="#"
+				><img src="./img/icons/logo.svg" alt="image" loading="lazy"
+			/></a>
+			<div class="header__right">
+				<nav class="header__nav">
+					<a href="#">Переваги</a>
+					<a href="#">Для кого?</a>
+					<a href="#">Jungle</a>
+					<a href="#">Відгуки</a>
+				</nav>
+				<button class="header__burger">
+					<img
+						class="desktop"
+						src="./img/icons/burger.svg"
+						alt="image"
+						loading="lazy"
+					/>
+					<img
+						class="mobile"
+						src="./img/icons/burger-black.svg"
+						alt="image"
+						loading="lazy"
+					/>
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="menu">
+		<div class="container">
+			<div class="menu__header">
+				<a class="menu__logo" href="#"
+					><img src="./img/icons/logo-white.svg" alt="image" loading="lazy"
+				/></a>
+				<button class="menu__close">
+					<img src="./img/icons/close-menu.svg" alt="image" loading="lazy" />
+				</button>
+			</div>
+			<nav class="menu__nav">
+				<a href="#">Переваги</a>
+				<a href="#">Для кого?</a>
+				<a href="#">Jungle</a>
+				<a href="#">Відгуки</a>
+			</nav>
+			<button class="primary open-modal">КУПИТИ ЗАРАЗ</button>
+			<ul class="menu__list">
+				<li class="menu__item">
+					<a href="#"
+						><img src="./img/icons/facebook.svg" alt="image" loading="lazy"
+					/></a>
+				</li>
+				<li class="menu__item">
+					<a href="#"
+						><img src="./img/icons/x.svg" alt="image" loading="lazy"
+					/></a>
+				</li>
+				<li class="menu__item">
+					<a href="#"
+						><img src="./img/icons/instagram.svg" alt="image" loading="lazy"
+					/></a>
+				</li>
+			</ul>
+		</div>
 	</div>
 </header>
 
 		<main>
 			<section class="hero-wrap">
 	<div class="container">
-		<div class="hero"></div>
+		<div class="hero desktop">
+			<div class="hero__info">
+				<span class="hero__pre-title">НОВА ФОРМУЛА CBD CREAM</span>
+				<h1 class="hero__title">CBD CREAM</h1>
+				<p class="hero__text">
+					Спецільна формула ля спортсменів, швидко знімає м’язову кріпатуру,
+					зменшує біль і сприяє відновленню після фізичних навантажень.
+				</p>
+				<div class="hero__buy">
+					<button class="primary open-modal">КУПИТИ ЗАРАЗ</button>
+					<p class="hero__price">$ 19.<span>99</span></p>
+				</div>
+			</div>
+			<div class="hero__product">
+				<img src="./img/product-hero.svg" alt="image" loading="lazy" />
+				<div class="hero__product-descr">
+					<p class="hero__product-descr--top">600 MG</p>
+					<p class="hero__product-descr--middle">HEMP EXTRACT</p>
+					<p class="hero__product-descr--bottom">Natural relief</p>
+				</div>
+			</div>
+			<ul class="hero__list">
+				<li class="hero__item">
+					<a href="#">
+						<img src="./img/icons/facebook.svg" alt="image" loading="lazy" />
+					</a>
+				</li>
+				<li class="hero__item">
+					<a href="#">
+						<img src="./img/icons/x.svg" alt="image" loading="lazy" />
+					</a>
+				</li>
+				<li class="hero__item">
+					<a href="#">
+						<img src="./img/icons/instagram.svg" alt="image" loading="lazy" />
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="hero mobile">
+			<div class="hero__product">
+				<img src="./img/product-hero.svg" alt="image" loading="lazy" />
+				<div class="hero__product-descr">
+					<p class="hero__product-descr--top">600 MG</p>
+					<p class="hero__product-descr--middle">HEMP EXTRACT</p>
+					<p class="hero__product-descr--bottom">Natural relief</p>
+				</div>
+			</div>
+			<div class="hero__info">
+				<span class="hero__pre-title">НОВА ФОРМУЛА CBD CREAM</span>
+				<h1 class="hero__title">CBD CREAM</h1>
+				<p class="hero__text">
+					Спецільна формула ля спортсменів, швидко знімає м’язову кріпатуру,
+					зменшує біль і сприяє відновленню після фізичних навантажень.
+				</p>
+				<div class="hero__buy">
+					<button class="primary open-modal">КУПИТИ ЗАРАЗ</button>
+					<p class="hero__price">$ 19.<span>99</span></p>
+				</div>
+			</div>
+			<div class="hero__list-wrap">
+				<ul class="hero__list">
+					<li class="hero__item">
+						<a href="#">
+							<img src="./img/icons/facebook.svg" alt="image" loading="lazy" />
+						</a>
+					</li>
+					<li class="hero__item">
+						<a href="#">
+							<img src="./img/icons/x.svg" alt="image" loading="lazy" />
+						</a>
+					</li>
+					<li class="hero__item">
+						<a href="#">
+							<img src="./img/icons/instagram.svg" alt="image" loading="lazy" />
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</div>
 </section>
 <section class="advantages-wrap">
 	<div class="container">
-		<div class="advantages"></div>
+		<h2 class="title">
+			Переваги
+			<span>CBD CREAM</span>
+		</h2>
+		<ul class="advantages__list">
+			<li class="advantages__item">
+				<div class="advantages__img">
+					<img src="./img/icons/health.svg" alt="image" loading="lazy" />
+				</div>
+				<p class="advantages__title">Швидке полегшення болю</p>
+				<p class="advantages__text">
+					CBD крем діє локально, проникаючи глибоко в м’язи та зменшуючи
+					запалення і больові відчуття вже через кілька хвилин після нанесення.
+				</p>
+			</li>
+			<li class="advantages__item">
+				<div class="advantages__img">
+					<img src="./img/icons/mynaui.svg" alt="image" loading="lazy" />
+				</div>
+				<p class="advantages__title">Природний склад без хімії</p>
+				<p class="advantages__text">
+					продукт не містить шкідливих добавок чи стероїдів, що робить його
+					безпечним навіть для щоденного використання
+				</p>
+			</li>
+			<li class="advantages__item">
+				<div class="advantages__img">
+					<img src="./img/icons/arm.svg" alt="image" loading="lazy" />
+				</div>
+				<p class="advantages__title">Покращення відновлення м’язів</p>
+				<p class="advantages__text">
+					регулярне застосування крему допомагає прискорити регенерацію тканин,
+					знижуючи ризик повторної травматизації
+				</p>
+			</li>
+			<li class="advantages__item">
+				<div class="advantages__img">
+					<img src="./img/icons/bag.svg" alt="image" loading="lazy" />
+				</div>
+				<p class="advantages__title">Зручність використання</p>
+				<p class="advantages__text">
+					компактна упаковка дозволяє мати крем під рукою в спортзалі або в
+					дорозі, а легка текстура швидко вбирається без слідів на одязі
+				</p>
+			</li>
+		</ul>
 	</div>
 </section>
 <section class="audience-wrap">
 	<div class="container">
-		<div class="audience"></div>
+		<h2 class="title">ДЛЯ КОГО та КОЛИ?</h2>
+		<ul class="audience__list">
+			<li class="audience__item">
+				<img
+					class="audience__item-img"
+					src="./img/a-1.png"
+					alt="image"
+					loading="lazy"
+				/>
+				<div class="audience__info">
+					<img
+						class="audience__info-img"
+						src="./img/icons/check.svg"
+						alt="image"
+						loading="lazy"
+					/>
+					<h4 class="audience__info-title">
+						<span> Для професійних спортсменів, </span> які регулярно піддають
+						м’язи інтенсивним навантаженням
+					</h4>
+					<p class="audience__info-text">
+						Після тренування або фізичної активності, коли з’являється м’язова
+						кріпатура чи дискомфорт
+					</p>
+				</div>
+				<img
+					class="audience__circle"
+					src="./img/icons/circle.svg"
+					alt="image"
+					loading="lazy"
+				/>
+			</li>
+			<li class="audience__item">
+				<img
+					class="audience__circle"
+					src="./img/icons/circle.svg"
+					alt="image"
+					loading="lazy"
+				/>
+				<img
+					class="audience__item-img"
+					src="./img/a-2.png"
+					alt="image"
+					loading="lazy"
+				/>
+				<div class="audience__info">
+					<img
+						class="audience__info-img"
+						src="./img/icons/check.svg"
+						alt="image"
+						loading="lazy"
+					/>
+					<h4 class="audience__info-title">
+						<span> Для новачків у спорті, </span> які тільки починають
+						тренуватися й стикаються з болем у м’язах
+					</h4>
+					<p class="audience__info-text">
+						На ранок після першого чи незвичного тренування, коли з’являється
+						м’язовий біль.
+					</p>
+				</div>
+			</li>
+			<li class="audience__item">
+				<img
+					class="audience__item-img"
+					src="./img/a-3.png"
+					alt="image"
+					loading="lazy"
+				/>
+				<div class="audience__info">
+					<img
+						class="audience__info-img"
+						src="./img/icons/check.svg"
+						alt="image"
+						loading="lazy"
+					/>
+					<h4 class="audience__info-title">
+						<span> Для бігунів, велосипедистів та кросфітерів, </span> після
+						змагань або довгих сесій.
+					</h4>
+					<p class="audience__info-text">
+						У перші години після інтенсивного фізичного навантаження для
+						швидшого відновлення.
+					</p>
+				</div>
+				<img
+					class="audience__circle"
+					src="./img/icons/circle.svg"
+					alt="image"
+					loading="lazy"
+				/>
+			</li>
+			<li class="audience__item">
+				<img
+					class="audience__circle"
+					src="./img/icons/circle.svg"
+					alt="image"
+					loading="lazy"
+				/>
+				<img
+					class="audience__item-img"
+					src="./img/a-4.png"
+					alt="image"
+					loading="lazy"
+				/>
+				<div class="audience__info">
+					<img
+						class="audience__info-img"
+						src="./img/icons/check.svg"
+						alt="image"
+						loading="lazy"
+					/>
+					<h4 class="audience__info-title">
+						<span> Для людей з активним способом життя, </span> які хочуть
+						зберігати рухливість і комфорт
+					</h4>
+					<p class="audience__info-text">
+						Увечері після робочого дня, тренування або походу, щоб зняти напругу
+						з м’язів перед сном.
+					</p>
+				</div>
+			</li>
+		</ul>
 	</div>
 </section>
 <section class="action-wrap">
 	<div class="container">
-		<div class="action"></div>
+		<div class="action">
+			<div class="action__left">
+				<p class="action__label">АКЦІЯ</p>
+				<p class="action__calc">ЗАЛИШИЛОСЬ:</p>
+				<div class="action__timer">
+					<div class="action__timer-block">
+						<p class="action__timer-time">12</p>
+						<span class="action__timer-line"></span>
+						<p class="action__timer-label">ГОДИН</p>
+					</div>
+					<img
+						class="action__timer-dots"
+						src="./img/icons/dots.svg"
+						alt="image"
+						loading="lazy"
+					/>
+					<div class="action__timer-block">
+						<p class="action__timer-time">56</p>
+						<span class="action__timer-line"></span>
+						<p class="action__timer-label">ХВИЛИН</p>
+					</div>
+					<img
+						class="action__timer-dots"
+						src="./img/icons/dots.svg"
+						alt="image"
+						loading="lazy"
+					/>
+					<div class="action__timer-block">
+						<p class="action__timer-time">17</p>
+						<span class="action__timer-line"></span>
+						<p class="action__timer-label">СЕКУНД</p>
+					</div>
+				</div>
+				<p class="action__descr">
+					*Акційна пропозиція діе хза умови замовлення від 2х упаковок
+				</p>
+			</div>
+			<img
+				class="action__center"
+				src="./img/action-product.svg"
+				alt="image"
+				loading="lazy"
+			/>
+			<div class="action__right">
+				<p class="action__pre-title">НЕ ЗВОЛІКАЙ</p>
+				<h2 class="action__title">
+					ЗАМОВЛЯЙ ЗАРАЗ ТА <span>ОТРИМАЙ</span> ДОДАТКОВУ <span>ЗНИЖКУ</span>
+				</h2>
+				<div class="action__buy">
+					<button class="primary open-modal">КУПИТИ ЗАРАЗ</button>
+					<p class="action__price">$ 49.<span>99</span></p>
+				</div>
+			</div>
+		</div>
 	</div>
 </section>
 <section class="recom-wrap">
 	<div class="container">
-		<div class="recom"></div>
+		<h2 class="title">Рекомендація від <span>JUNGLE</span></h2>
+		<div class="recom">
+			<div class="recom__info">
+				<p class="recom__text">
+					У стронгмені немає дрібниць — кожне тренування на межі можливостей.
+					М’язовий біль і кріпатура — щоденна реальність. Я перепробував багато
+					засобів, але CBD крем справді працює. Він зменшує запалення, швидко
+					прибирає біль і дозволяє мені не втрачати темп у підготовці. Особливо
+					ціную, що він натуральний — без жодної 'хімії'. Наніс — і через кілька
+					хвилин уже легше. Це не просто косметика — це інструмент відновлення.
+					Рекомендую кожному, хто працює з тілом серйозно.
+				</p>
+				<img
+					class="recom__quotes"
+					src="./img/icons/quotes.svg"
+					alt="image"
+					loading="lazy"
+				/>
+				<p class="recom__name">Павло Наконечний</p>
+				<ul class="recom__list">
+					<li class="recom__item">Чемпіон світу</li>
+					<li class="recom__item dot"></li>
+					<li class="recom__item">МСК</li>
+					<li class="recom__item dot"></li>
+					<li class="recom__item">Стронгмен</li>
+				</ul>
+				<ul class="recom__social">
+					<li class="recom__social-item">
+						<a href="#"
+							><img src="./img/icons/facebook.svg" alt="image" loading="lazy"
+						/></a>
+					</li>
+					<li class="recom__social-item">
+						<a href="#"
+							><img src="./img/icons/x.svg" alt="image" loading="lazy"
+						/></a>
+					</li>
+					<li class="recom__social-item">
+						<a href="#"
+							><img src="./img/icons/instagram.svg" alt="image" loading="lazy"
+						/></a>
+					</li>
+				</ul>
+			</div>
+			<img
+				class="recom__img"
+				src="./img/pavlo.png"
+				alt="image"
+				loading="lazy"
+			/>
+		</div>
 	</div>
 </section>
 <section class="choose-wrap">
 	<div class="container">
-		<div class="choose"></div>
+		<h2 class="title">ОБИРАЙ ТА замовляй</h2>
+		<ul class="choose__list">
+			<li class="choose__item">
+				<img
+					class="choose__img"
+					src="./img/icons/choose.svg"
+					alt="image"
+					loading="lazy"
+				/>
+				<p class="choose__ml">500 Ml</p>
+				<div class="choose__buy">
+					<div class="choose__price">
+						<p class="choose__price-top">$ 19.<span>99</span></p>
+						<p class="choose__price-bottom">$ 19.99 per/pcs</p>
+					</div>
+					<button class="primary open-modal">КУПИТИ ЗАРАЗ</button>
+				</div>
+			</li>
+			<li class="choose__item">
+				<img
+					class="choose__img"
+					src="./img/icons/choose-x3.svg"
+					alt="image"
+					loading="lazy"
+				/>
+				<p class="choose__ml">500 Ml x 3</p>
+				<div class="choose__buy">
+					<div class="choose__price">
+						<p class="choose__price-top accent">$ 49.<span>99</span></p>
+						<p class="choose__price-bottom">$ 16.66 per/pcs</p>
+					</div>
+					<button class="primary open-modal">КУПИТИ ЗАРАЗ</button>
+				</div>
+			</li>
+			<li class="choose__item">
+				<img
+					class="choose__img"
+					src="./img/icons/choose-x6.svg"
+					alt="image"
+					loading="lazy"
+				/>
+				<p class="choose__ml">500 Ml x 6</p>
+				<div class="choose__buy">
+					<div class="choose__price">
+						<p class="choose__price-top">$ 109.<span>99</span></p>
+						<p class="choose__price-bottom">$ 18.33 per/pcs</p>
+					</div>
+					<button class="primary open-modal">КУПИТИ ЗАРАЗ</button>
+				</div>
+			</li>
+		</ul>
+	</div>
+</section>
+<section class="reviews-wrap">
+	<div class="container">
+		<h2 class="title">ЩО кажуть наші покупці</h2>
+		<ul class="reviews__list">
+			<li class="reviews__item">
+				<p class="reviews__item-text">
+					CBD крем — це справжнє відкриття для моїх клієнтів. Після інтенсивних
+					кругових тренувань часто виникає м’язова кріпатура, і тепер я
+					рекомендую цей крем як частину програми відновлення. Знімає напругу
+					швидко, не залишає слідів і має приємний, ненав’язливий запах.
+				</p>
+				<img
+					class="reviews__item-img"
+					src="./img/icons/quotes.svg"
+					alt="image"
+					loading="lazy"
+				/>
+				<div class="reviews__item-bottom">
+					<img src="./img/r-1.png" alt="image" loading="lazy" />
+					<div class="reviews__item-author">
+						<p class="reviews__item-name">Олена Савчук</p>
+						<p class="reviews__item-position">
+							Тренер з функціонального тренінгу, фітнес-клуб "Forma+"
+						</p>
+					</div>
+				</div>
+			</li>
+			<li class="reviews__item">
+				<p class="reviews__item-text">
+					Після важких присідань і станових тяг біль у ногах був звичною
+					справою. З CBD кремом все інакше — біль м’якший, м’язи відновлюються
+					швидше. Особливо добре працює на нижню частину спини. Реально
+					допомагає.
+				</p>
+				<img
+					class="reviews__item-img"
+					src="./img/icons/quotes.svg"
+					alt="image"
+					loading="lazy"
+				/>
+				<div class="reviews__item-bottom">
+					<img src="./img/r-2.png" alt="image" loading="lazy" />
+					<div class="reviews__item-author">
+						<p class="reviews__item-name">Ігор Кулинич</p>
+						<p class="reviews__item-position">
+							Кандидат у майстри спорту з пауерліфтингу, учасник національних
+							змагань
+						</p>
+					</div>
+				</div>
+			</li>
+			<li class="reviews__item">
+				<p class="reviews__item-text">
+					Я працюю з професійними спортсменами, і багато хто з них страждає від
+					хронічної м’язової втоми. Ми протестували цей CBD крем на декількох
+					кейсах — результат помітний вже після першого використання. Знімає
+					запалення, покращує мікроциркуляцію, не викликає подразнення. Дуже
+					достойний продукт.
+				</p>
+				<img
+					class="reviews__item-img"
+					src="./img/icons/quotes.svg"
+					alt="image"
+					loading="lazy"
+				/>
+				<div class="reviews__item-bottom">
+					<img src="./img/r-3.png" alt="image" loading="lazy" />
+					<div class="reviews__item-author">
+						<p class="reviews__item-name">Дмитро Левицький</p>
+						<p class="reviews__item-position">
+							Фізичний терапевт, Центр спортивної реабілітації "ActiveMotion"
+						</p>
+					</div>
+				</div>
+			</li>
+			<li class="reviews__item">
+				<p class="reviews__item-text">
+					Після інтенсивних бігових тренувань і стрибків часто відчуваю
+					затискання в литках і стегнах. Цей CBD крем став моїм порятунком:
+					приємно охолоджує, швидко знімає втому й дозволяє відновитися вже до
+					наступного дня. Рекомендую всім, хто хоче тренуватись без перерв на
+					біль.
+				</p>
+				<img
+					class="reviews__item-img"
+					src="./img/icons/quotes.svg"
+					alt="image"
+					loading="lazy"
+				/>
+				<div class="reviews__item-bottom">
+					<img src="./img/r-4.png" alt="image" loading="lazy" />
+					<div class="reviews__item-author">
+						<p class="reviews__item-name">Анастасія Гуменюк</p>
+						<p class="reviews__item-position">
+							Майстер спорту з легкої атлетики, персональна тренерка
+						</p>
+					</div>
+				</div>
+			</li>
+		</ul>
 	</div>
 </section>
 <div class="modal-wrap hidden" data-aos="fade" data-aos-offset="200">
@@ -65,27 +632,27 @@
 			</button>
 			<ul class="swiper-wrapper modal__list">
 				<li class="swiper-slide modal__item">
-					<img class="modal__item-img" src="./img/product-form.png" alt="" />
-					<p class="modal__item-name">Product Name One</p>
-					<p class="modal__item-price">$ 200</p>
+					<img class="modal__item-img" src="./img/icons/choose.svg" alt="" />
+					<p class="modal__item-name">500 Ml</p>
+					<p class="modal__item-price">$ 19.<span>99</span></p>
 					<label class="custom-checkbox">
 						<input type="checkbox" name="product" value="Product Name One" />
 						<span class="checkmark"></span>
 					</label>
 				</li>
 				<li class="swiper-slide modal__item">
-					<img class="modal__item-img" src="./img/product-form.png" alt="" />
-					<p class="modal__item-name">Product Name Two</p>
-					<p class="modal__item-price">$ 160</p>
+					<img class="modal__item-img" src="./img/icons/choose-x3.svg" alt="" />
+					<p class="modal__item-name">500 Ml x 3</p>
+					<p class="modal__item-price">$ 49.<span>99</span></p>
 					<label class="custom-checkbox">
 						<input type="checkbox" name="product" value="Product Name Two" />
 						<span class="checkmark"></span>
 					</label>
 				</li>
 				<li class="swiper-slide modal__item">
-					<img class="modal__item-img" src="./img/product-form.png" alt="" />
-					<p class="modal__item-name">Product Name Three</p>
-					<p class="modal__item-price">$ 320</p>
+					<img class="modal__item-img" src="./img/icons/choose-x6.svg" alt="" />
+					<p class="modal__item-name">500 Ml x 6</p>
+					<p class="modal__item-price">$ 109.<span>99</span></p>
 					<label class="custom-checkbox">
 						<input type="checkbox" name="product" value="Product Name Three" />
 						<span class="checkmark"></span>
@@ -96,7 +663,9 @@
 				<img src="./img/icons/chev-r.svg" alt="" />
 			</button>
 		</div>
-		<button class="primary" id="place-order" disabled>Place an Order</button>
+		<button class="primary" id="place-order" disabled>
+			Зробити замовлення
+		</button>
 	</div>
 	<div class="delivery hidden">
 		<img src="./img/icons/close-modal.svg" alt="" class="delivery__close" />
@@ -163,24 +732,70 @@
 					<label for="">Email <span>*</span></label>
 					<input type="email" placeholder="Your Email Address" required />
 				</div>
-				<button class="primary" type="submit" disabled>Rush my Order</button>
+				<button class="primary" type="submit" disabled>Замовити</button>
 			</form>
 		</div>
 	</div>
 </div>
-<header class="header-wrap">
-	<div class="container">
-		<div class="header"></div>
-	</div>
-</header>
 
 		</main>
 		<footer class="footer-wrap">
-	<div class="container">
-		<div class="footer"></div>
+	<div class="footer__top-wrap">
+		<div class="container">
+			<div class="footer__top">
+				<img
+					class="footer__top-right"
+					src="./img/pavlo-left.png"
+					alt="image"
+					loading="lazy"
+				/>
+				<div class="footer__top-center">
+					<img src="./img/product-hero.svg" alt="image" loading="lazy" />
+					<div class="descr">
+						<p class="descr__top">600 MG</p>
+						<p class="descr__middle">HEMP EXTRACT</p>
+						<p class="descr__bottom">Natural relief</p>
+					</div>
+				</div>
+				<img
+					class="footer__top-left"
+					src="./img/pavlo-right.png"
+					alt="image"
+					loading="lazy"
+				/>
+			</div>
+		</div>
+	</div>
+	<div class="footer__middle-wrap">
+		<div class="container">
+			<div class="footer__middle">
+				<p class="footer__middle-pre-title">НОВА ФОРМУЛА CBD CREAM</p>
+				<ul class="footer__middle-list">
+					<li class="footer__middle-item">CBD CREAM</li>
+					<li class="footer__middle-item">$ 19.<span>99</span></li>
+					<li class="footer__middle-item">
+						<button class="primary open-modal">КУПИТИ ЗАРАЗ</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="footer__bottom-wrap">
+		<div class="container">
+			<div class="footer__bottom">
+				<a class="footer__bottom-logo" href="#"
+					><img src="./img/icons/logo.svg" alt="image" loading="lazy"
+				/></a>
+				<button class="to-top">
+					УГОРУ
+					<img src="./img/icons/arrow-up.svg" alt="image" loading="lazy" />
+				</button>
+			</div>
+		</div>
 	</div>
 </footer>
 
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script src="https://unpkg.com/imask"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js"></script>
