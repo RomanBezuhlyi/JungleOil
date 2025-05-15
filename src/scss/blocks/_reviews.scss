@@ -1,1 +1,68 @@
 @use '../abstracts' as *;
+
+.reviews {
+	&__list {
+		@include flex(row, center, center);
+		flex-wrap: wrap;
+		gap: 16px;
+		@media (max-width: 991px) {
+			flex-direction: column;
+			gap: 8px;
+		}
+	}
+
+	&__item {
+		@include flex(column, space-between, flex-start);
+		width: 47%;
+		height: 309px;
+		padding: 24px;
+		border-radius: 8px;
+		border: 1px solid $natural_100;
+		background: $white;
+		box-shadow: 0px 8px 40px 0px rgba(7, 27, 25, 0.15);
+		@media (max-width: 991px) {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&__item-text {
+		color: $natural_900;
+		font-size: 18px;
+		font-style: italic;
+		font-weight: 500;
+		margin-bottom: 45px;
+		@media (max-width: 991px) {
+			font-size: 14px;
+			margin-bottom: 8px;
+		}
+	}
+
+	&__item-img {
+		width: 32px;
+		height: 32px;
+		margin-left: auto;
+	}
+
+	&__item-bottom {
+		@include flex(row, flex-start, flex-start);
+		gap: 12px;
+	}
+	&__item-name {
+		color: $natural_900;
+		font-size: 18px;
+		font-weight: 700;
+		margin-bottom: 4px;
+		@media (max-width: 991px) {
+			font-size: 16px;
+		}
+	}
+
+	&__item-position {
+		color: $natural_400;
+		font-size: 14px;
+		@media (max-width: 991px) {
+			font-size: 12px;
+		}
+	}
+}

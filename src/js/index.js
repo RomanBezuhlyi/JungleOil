@@ -1,5 +1,8 @@
+import './modules/action.js'
 import './modules/animation.js'
 import './modules/dropdown.js'
 import './modules/form.js'
 import './modules/menu.js'
 import './modules/modal.js'
+import './modules/swiper.js'
+import './modules/to-top.js'

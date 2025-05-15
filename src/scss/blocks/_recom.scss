@@ -1,1 +1,96 @@
 @use '../abstracts' as *;
+
+.recom-wrap {
+	background-color: $black;
+	background-image: url(../img/recom.svg);
+	background-repeat: no-repeat;
+	background-position: center bottom 20%;
+	padding: 160px 0 142px 0;
+	@media (max-width: 991px) {
+		padding: 80px 0;
+		background-size: 100%;
+		background-position: center bottom 22%;
+	}
+	.title {
+		color: $white;
+	}
+}
+.recom {
+	@include flex(row, space-between, center);
+	gap: 20px;
+	@media (max-width: 991px) {
+		@include flex(column, center, center);
+	}
+	&__text {
+		max-width: 500px;
+		color: $white;
+		font-size: 20px;
+		font-style: italic;
+		font-weight: 500;
+		line-height: 26px;
+		margin-bottom: 16px;
+		@media (max-width: 991px) {
+			max-width: 100%;
+			font-size: 18px;
+			line-height: 22px;
+		}
+	}
+
+	&__quotes {
+		margin-left: auto;
+		margin-bottom: 40px;
+		@media (max-width: 991px) {
+			width: 100%;
+			font-size: 18px;
+			line-height: 22px;
+			width: 32px;
+			height: 32px;
+			margin-bottom: 8px;
+		}
+	}
+
+	&__name {
+		color: $primaryGreen;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 24px;
+		margin-bottom: 4px;
+		@media (max-width: 991px) {
+			text-align: center;
+		}
+	}
+
+	&__list {
+		@include flex(row, flex-start, center);
+		gap: 8px;
+		margin-bottom: 4px;
+		@media (max-width: 991px) {
+			@include flex(row, center, center);
+		}
+	}
+
+	&__item {
+		color: $white;
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.dot {
+		width: 4px;
+		height: 4px;
+		background-color: $white;
+		border-radius: 100%;
+	}
+
+	&__social {
+		@include flex(row, flex-start, center);
+		gap: 8px;
+		@media (max-width: 991px) {
+			@include flex(row, center, center);
+		}
+	}
+
+	&__social-item {
+		@include center;
+	}
+}

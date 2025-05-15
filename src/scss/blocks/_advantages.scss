@@ -1,1 +1,78 @@
 @use '../abstracts' as *;
+
+.advantages-wrap {
+	margin-top: 160px;
+	@media (max-width: 991px) {
+		margin-top: 120px;
+	}
+	.title {
+		span {
+			@media (max-width: 991px) {
+				display: block;
+			}
+		}
+	}
+}
+.advantages {
+	&__list {
+		@include flex(row, center, center);
+		column-gap: 56px;
+		row-gap: 80px;
+		flex-wrap: wrap;
+		@media (max-width: 991px) {
+			column-gap: 40px;
+			row-gap: 40px;
+		}
+	}
+
+	&__item {
+		width: 47%;
+		@media (max-width: 991px) {
+			width: 100%;
+		}
+
+		@include flex(column, center, center);
+	}
+
+	&__img {
+		@include center;
+		width: 96px;
+		height: 96px;
+		border-radius: 8px;
+		border: 1px solid rgba(255, 255, 255, 0.3);
+		background: linear-gradient(90deg, #0a8879 0%, #09aa4c 100%);
+		box-shadow: 0px 8px 24px 0px rgba(10, 136, 121, 0.45);
+		margin-bottom: 32px;
+		@media (max-width: 991px) {
+			width: 72px;
+			height: 72px;
+			margin-bottom: 24px;
+		}
+	}
+
+	&__title {
+		color: $natural_900;
+		text-align: center;
+		font-size: 20px;
+		font-weight: 700;
+		text-transform: uppercase;
+		width: 348px;
+		margin-bottom: 16px;
+		@media (max-width: 991px) {
+			width: 100%;
+			font-size: 18px;
+			margin-bottom: 8px;
+		}
+	}
+
+	&__text {
+		color: $natural_800;
+		text-align: center;
+		font-size: 18px;
+		width: 348px;
+		@media (max-width: 991px) {
+			width: 100%;
+			font-size: 16px;
+		}
+	}
+}

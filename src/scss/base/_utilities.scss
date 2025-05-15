@@ -13,7 +13,9 @@
 .d-block {
 	display: block;
 }
-
+.no-scroll {
+	overflow: hidden;
+}
 .hidden {
 	display: none;
 }
@@ -41,13 +43,13 @@
 }
 .desktop {
 	display: flex !important;
-	@media (max-width: 768px) {
+	@media (max-width: 991px) {
 		display: none !important;
 	}
 }
 .mobile {
 	display: none !important;
-	@media (max-width: 768px) {
+	@media (max-width: 991px) {
 		display: flex !important;
 	}
 }
@@ -66,6 +68,25 @@
 	font-weight: 600;
 	@include transition;
 	&:hover {
-		background: $primaryGreenDark;
+		box-shadow: 0px 10px 30px 0px rgba(10, 136, 121, 0.9);
+	}
+	&:disabled {
+		background: $natural_400;
+		box-shadow: none;
+	}
+}
+.title {
+	color: $natural_900;
+	text-align: center;
+	font-size: 48px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 64px;
+	span {
+		color: $primaryGreen;
+	}
+	@media (max-width: 991px) {
+		font-size: 40px;
+		margin-bottom: 48px;
 	}
 }

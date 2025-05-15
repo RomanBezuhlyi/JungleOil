@@ -1,1 +1,112 @@
 @use '../abstracts' as *;
+
+.header-wrap {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	padding: 16px 0;
+	@media (max-width: 991px) {
+		position: static;
+		padding: 20px 0;
+		border-bottom: 1px solid #e0e0e0;
+	}
+}
+.header {
+	width: 100%;
+	@include flex(row, space-between, center);
+	&__logo {
+		@include center;
+		@media (max-width: 991px) {
+			width: 129px;
+			height: 24px;
+		}
+	}
+	&__right {
+		@include flex(row, flex-end, center);
+		gap: 40px;
+	}
+	&__nav {
+		@include flex(row, center, center);
+		@media (max-width: 991px) {
+			display: none;
+		}
+		a {
+			@include center;
+			height: 48px;
+			padding: 16px 32px;
+			color: $white;
+			font-size: 14px;
+			font-weight: 600;
+		}
+	}
+	&__burger {
+		@include center;
+	}
+}
+.menu {
+	position: absolute;
+	top: -2000%;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	height: 100vh;
+	background-color: $black;
+	background-image: url(../img/icons/cannabis-menu.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: 0.8s;
+	@media (max-width: 991px) {
+		top: -1800%;
+	}
+	&--active {
+		top: 0;
+	}
+	&__header {
+		@include flex(row, space-between, center);
+		padding: 24px 0;
+	}
+	&__logo {
+		@include center;
+		@media (max-width: 991px) {
+			width: 129px;
+			height: 24px;
+		}
+	}
+	&__nav {
+		margin-top: 180px;
+		@include flex(column, center, center);
+		gap: 40px;
+		margin-bottom: 76px;
+		@media (max-width: 991px) {
+			gap: 24px;
+			margin-top: 80px;
+			margin-bottom: 120px;
+		}
+		a {
+			color: $white;
+			text-align: center;
+			font-size: 32px;
+			font-weight: 700;
+			text-transform: uppercase;
+			@media (max-width: 991px) {
+				font-size: 24px;
+			}
+		}
+	}
+	.primary {
+		margin: auto;
+	}
+	&__list {
+		margin-top: 40px;
+		@include flex(row, center, center);
+		gap: 24px;
+	}
+	&__item {
+		@include center;
+	}
+	&__item > a {
+		@include center;
+	}
+}
