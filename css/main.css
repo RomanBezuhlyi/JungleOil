@@ -309,16 +309,16 @@ button {
   }
 }
 .modal h2 {
+  color: #242424;
   text-align: center;
   font-size: 32px;
-  font-weight: 500;
-  margin-bottom: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 30px;
 }
 @media (max-width: 991px) {
   .modal h2 {
-    text-align: left;
     font-size: 24px;
-    font-weight: 400;
   }
 }
 .modal__list {
@@ -344,17 +344,22 @@ button {
 .modal__item-name {
   color: #242424;
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
+}
+@media (max-width: 991px) {
+  .modal__item-name {
+    font-weight: 500;
+  }
 }
 .modal__item-price {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  color: #303030;
-  text-align: center;
+  color: #242424;
   font-size: 40px;
+  font-weight: 700;
 }
 .modal__item-price span {
   font-size: 24px;
@@ -397,16 +402,16 @@ button {
   }
 }
 .delivery h2 {
+  color: #242424;
   text-align: center;
   font-size: 32px;
-  font-weight: 500;
-  margin-bottom: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 30px;
 }
 @media (max-width: 991px) {
   .delivery h2 {
-    text-align: left;
     font-size: 24px;
-    font-weight: 400;
   }
 }
 @media (max-width: 991px) {
@@ -422,6 +427,7 @@ button {
   justify-content: center;
   align-items: center;
   gap: 16px;
+  padding-bottom: 27px;
 }
 .delivery__input {
   width: 100%;
@@ -498,7 +504,7 @@ button {
 }
 .modal__item.selected .modal__item-name,
 .modal__item.selected .modal__item-price {
-  color: #090909;
+  color: #0a8879;
 }
 
 .custom-select-wrap {
