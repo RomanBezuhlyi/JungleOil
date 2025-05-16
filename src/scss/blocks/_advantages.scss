@@ -27,11 +27,10 @@
 
 	&__item {
 		width: 47%;
+		@include flex(column, center, center);
 		@media (max-width: 991px) {
 			width: 100%;
 		}
-
-		@include flex(column, center, center);
 	}
 
 	&__img {

@@ -175,7 +175,7 @@
 		</div>
 	</div>
 </section>
-<section class="advantages-wrap">
+<section class="advantages-wrap" data-aos="fade" data-aos-offset="200">
 	<div class="container">
 		<h2 class="title">
 			Переваги
@@ -225,7 +225,7 @@
 		</ul>
 	</div>
 </section>
-<section class="audience-wrap">
+<section class="audience-wrap" data-aos="fade" data-aos-offset="200">
 	<div class="container">
 		<h2 class="title">ДЛЯ КОГО та КОЛИ?</h2>
 		<ul class="audience__list">
@@ -352,7 +352,7 @@
 		</ul>
 	</div>
 </section>
-<section class="action-wrap">
+<section class="action-wrap" data-aos="fade" data-aos-offset="200">
 	<div class="container">
 		<div class="action">
 			<div class="action__left">
@@ -410,7 +410,7 @@
 		</div>
 	</div>
 </section>
-<section class="recom-wrap">
+<section class="recom-wrap" data-aos="fade" data-aos-offset="200">
 	<div class="container">
 		<h2 class="title">Рекомендація від <span>JUNGLE</span></h2>
 		<div class="recom">
@@ -465,7 +465,7 @@
 		</div>
 	</div>
 </section>
-<section class="choose-wrap">
+<section class="choose-wrap" data-aos="fade" data-aos-offset="200">
 	<div class="container">
 		<h2 class="title">ОБИРАЙ ТА замовляй</h2>
 		<ul class="choose__list">
@@ -520,7 +520,7 @@
 		</ul>
 	</div>
 </section>
-<section class="reviews-wrap">
+<section class="reviews-wrap" data-aos="fade" data-aos-offset="200">
 	<div class="container">
 		<h2 class="title">ЩО кажуть наші покупці</h2>
 		<ul class="reviews__list">
@@ -624,15 +624,25 @@
 </section>
 <div class="modal-wrap hidden" data-aos="fade" data-aos-offset="200">
 	<div class="modal">
-		<img src="./img/icons/close-modal.svg" alt="" class="modal__close" />
-		<h2>Choose Your Product</h2>
+		<img
+			src="./img/icons/close-modal.svg"
+			alt="image"
+			loading="lazy"
+			class="modal__close"
+		/>
+		<h2>Замовлення</h2>
 		<div class="swiperModal">
 			<button class="modal-button-prev">
-				<img src="./img/icons/chev-l.svg" alt="" />
+				<img src="./img/icons/chev-l.svg" alt="image" loading="lazy" />
 			</button>
 			<ul class="swiper-wrapper modal__list">
 				<li class="swiper-slide modal__item">
-					<img class="modal__item-img" src="./img/icons/choose.svg" alt="" />
+					<img
+						class="modal__item-img"
+						src="./img/icons/choose-x1.svg"
+						alt="image"
+						loading="lazy"
+					/>
 					<p class="modal__item-name">500 Ml</p>
 					<p class="modal__item-price">$ 19.<span>99</span></p>
 					<label class="custom-checkbox">
@@ -641,7 +651,12 @@
 					</label>
 				</li>
 				<li class="swiper-slide modal__item">
-					<img class="modal__item-img" src="./img/icons/choose-x3.svg" alt="" />
+					<img
+						class="modal__item-img"
+						src="./img/icons/choose-x3.svg"
+						alt="image"
+						loading="lazy"
+					/>
 					<p class="modal__item-name">500 Ml x 3</p>
 					<p class="modal__item-price">$ 49.<span>99</span></p>
 					<label class="custom-checkbox">
@@ -650,7 +665,12 @@
 					</label>
 				</li>
 				<li class="swiper-slide modal__item">
-					<img class="modal__item-img" src="./img/icons/choose-x6.svg" alt="" />
+					<img
+						class="modal__item-img"
+						src="./img/icons/choose-x6.svg"
+						alt="image"
+						loading="lazy"
+					/>
 					<p class="modal__item-name">500 Ml x 6</p>
 					<p class="modal__item-price">$ 109.<span>99</span></p>
 					<label class="custom-checkbox">
@@ -660,7 +680,7 @@
 				</li>
 			</ul>
 			<button class="modal-button-next">
-				<img src="./img/icons/chev-r.svg" alt="" />
+				<img src="./img/icons/chev-r.svg" alt="image" loading="lazy" />
 			</button>
 		</div>
 		<button class="primary" id="place-order" disabled>
@@ -668,69 +688,71 @@
 		</button>
 	</div>
 	<div class="delivery hidden">
-		<img src="./img/icons/close-modal.svg" alt="" class="delivery__close" />
-		<h2>Choose Your Product</h2>
+		<img
+			src="./img/icons/close-modal.svg"
+			alt="image"
+			loading="lazy"
+			class="delivery__close"
+		/>
+		<h2>Адреса доставки</h2>
 		<div class="delivery__form-wrap">
 			<form class="delivery__form" action="">
 				<div class="row">
 					<div class="delivery__input">
-						<label for="">First Name <span>*</span></label>
-						<input type="text" placeholder="Your First Name" required />
+						<label for="">Ім'я <span>*</span></label>
+						<input type="text" placeholder="Ваше ім'я" required />
 					</div>
 					<div class="delivery__input">
-						<label for="">Last Name <span>*</span></label>
-						<input type="text" placeholder="Your Last Name" required />
+						<label for="">Прізвище <span>*</span></label>
+						<input type="text" placeholder="Ваше прізвище" required />
 					</div>
 				</div>
 				<div class="delivery__input">
-					<label for="">Address Line 1 <span>*</span></label>
-					<input type="text" placeholder="Your Address Line 1" required />
+					<label for="">Рядок адреси 1 <span>*</span></label>
+					<input type="text" placeholder="Рядок вашої адреси 1" required />
 				</div>
 				<div class="delivery__input">
-					<label for="">Address Line 2 <span>*</span></label>
-					<input type="text" placeholder="Your Address Line 2" required />
+					<label for="">Рядок адреси 2 <span>*</span></label>
+					<input type="text" placeholder="Рядок вашої адреси 2" required />
 				</div>
 				<div class="row">
 					<div class="custom-select-wrap">
-						<label for="state">State <span>*</span></label>
+						<label for="state">Область<span>*</span></label>
 						<div class="custom-select" id="state-select">
 							<div class="custom-select__selected">NY</div>
 							<div class="custom-select__arrow">
-								<img src="./img/icons/chev.svg" alt="" />
+								<img src="./img/icons/chev.svg" alt="image" loading="lazy" />
 							</div>
 							<ul class="custom-select__options hidden">
-								<li data-value="NY">NY</li>
-								<li data-value="AL">AL</li>
-								<li data-value="AK">AK</li>
-								<li data-value="AZ">AZ</li>
-								<li data-value="AR">AR</li>
-								<li data-value="NY">NY</li>
-								<li data-value="AL">AL</li>
-								<li data-value="AK">AK</li>
-								<li data-value="AZ">AZ</li>
-								<li data-value="AR">AR</li>
+								<li data-value="Київська">Київська</li>
+								<li data-value="Харківська">Харківська</li>
+								<li data-value="Вінницька">Вінницька</li>
 							</ul>
 						</div>
-						<input type="hidden" name="state" value="NY" required />
+						<input type="hidden" name="state" value="Київська" required />
 					</div>
 					<div class="delivery__input">
-						<label for="">City <span>*</span></label>
-						<input type="text" placeholder="Your City" required />
+						<label for="">Місто <span>*</span></label>
+						<input type="text" placeholder="Ваше місто" required />
 					</div>
 				</div>
 				<div class="row">
 					<div class="delivery__input">
-						<label for="">Zip Code <span>*</span></label>
-						<input type="text" placeholder="Your Zip Code" required />
+						<label for="">Поштовий індекс <span>*</span></label>
+						<input type="text" placeholder="Ваш поштовий індекс" required />
 					</div>
 					<div class="delivery__input">
-						<label for="">Phone <span>*</span></label>
-						<input type="tel" placeholder="Your Phone Number" required />
+						<label for="">Телефон <span>*</span></label>
+						<input type="tel" placeholder="Ваш номер телефону" required />
 					</div>
 				</div>
 				<div class="delivery__input">
-					<label for="">Email <span>*</span></label>
-					<input type="email" placeholder="Your Email Address" required />
+					<label for="">Електронна пошта <span>*</span></label>
+					<input
+						type="email"
+						placeholder="Ваша адреса електронної пошти"
+						required
+					/>
 				</div>
 				<button class="primary" type="submit" disabled>Замовити</button>
 			</form>
